@@ -13,13 +13,74 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  border: 1px solid red;
+  display: flex;
+  position: relative;
+    
   /* выше установили ограничения для секции */
 }
 
+.logo {
+  width: 228px;
+  height: 32px;
+  border: 1px solid red;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+
+}
+
+.header__title {
+  border: 0.1px solid red;
+  padding: 0;
+  width: 730px;
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  display: flex;
+  align-self: center;
+  
+  
+}
+
+.header__subtitle {
+  border: 1px solid red;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__link {
+  border: 1px solid red;
+}
+
+.header__main-illustrator {
+  border: 1px solid red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 765px;
+  height: 608px;
+}
+
+
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  border: 1px solid red;
+  position: absolute;
+  top: 64px;
+  right: 0;
   height: 568px;
   width: 568px;
+  
 }
 
 /* и элемента с модификатором вида ключ-значение */
