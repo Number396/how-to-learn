@@ -10,12 +10,13 @@
 }
 
 .header {
+  /* border: 1px solid red; */
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  border: 1px solid red;
   display: flex;
   position: relative;
+  background-color: #f2f2f2;
     
   /* выше установили ограничения для секции */
 }
@@ -23,32 +24,32 @@
 .logo {
   width: 228px;
   height: 32px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-
+  background-image: url(/images/logo_place_header.svg);
+  z-index: 2;
 }
 
 .header__title {
-  border: 0.1px solid red;
+  /* border: 1px solid red; */
   padding: 0;
   width: 730px;
   margin-left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  display: flex;
   align-self: center;
-  
-  
+  z-index: 2;
+   
 }
 
 .header__subtitle {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -56,37 +57,42 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 2;
 }
 
 .header__link {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  text-decoration: none;
 }
 
 .header__main-illustrator {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
   bottom: 0;
   right: 0;
   width: 765px;
   height: 608px;
+  object-fit: cover;
+  z-index: 1;
 }
 
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
   top: 64px;
   right: 0;
   height: 568px;
   width: 568px;
-  
+  background-color: #2f80ed;
+    
 }
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
+  margin-right: 0; /* скорее всего это не нужно */
   margin-top: 80px;
 }
