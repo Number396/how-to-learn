@@ -8,6 +8,9 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+.page_font-default {
+  margin: 0;
+}
 
 .header {
   /* border: 1px solid red; */
@@ -88,6 +91,52 @@
   background-color: #2f80ed;
     
 }
+
+.description {
+  /* border: 1px solid red; */
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.two-columns {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+ }
+
+.two-columns__brief {
+  /* border: 1px solid red; */
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin: 0;
+}
+
+.two-columns__main-text {
+  /* border: 1px solid red; */
+  margin: 0;
+  width: 80%;
+  min-width: 784px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  min-height: 332px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
